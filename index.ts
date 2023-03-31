@@ -21,6 +21,9 @@ const addOneClick$ = (id) =>
     startWith(0)
   );
 
+// IDEAS:
+// + add fn for delOneClick$
+
 // accumulation of all results after any clicks
 combineLatest(
   addOneClick$('red'),
