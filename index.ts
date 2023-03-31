@@ -2,6 +2,9 @@
 import { fromEvent, combineLatest } from 'rxjs';
 import { mapTo, startWith, scan, tap, map } from 'rxjs/operators';
 
+// https://www.learnrxjs.io/learn-rxjs/operators/combination/combinelatest
+// Example 3 BEGIN: Combining events from 2 buttons
+
 // elem refs
 const redTotal = document.getElementById('red-total');
 const blackTotal = document.getElementById('black-total');
@@ -30,3 +33,4 @@ combineLatest(
 
   total.innerHTML = red + black + white;
 });
+// Example 3 END:
